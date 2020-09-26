@@ -41,6 +41,7 @@ end
 katherine = User.create(username: "Elronia")
 patrick = User.create(username: "pierre2")
 
-painting1 = Painting.create(name: "The Jewess", image: "db/paintings_image/Amedeo Modigliani_paintings", painter_id: 1)
+painting1 = Painting.create(name: "The Jewess", year: "1908", image: "db/paintings_image/Amedeo Modigliani_paintings", painter_id: 1)
 
 favorite1 = Favorite.create(painting_id: 1, user_id: 2)
+puts "I have seeded the database"
