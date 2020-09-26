@@ -1,8 +1,14 @@
 require 'csv'
 
 Painter.destroy_all
+User.destroy_all
+Painting.destroy_all
+Favorite.destroy_all
 
 Painter.reset_pk_sequence
+User.reset_pk_sequence
+Painting.reset_pk_sequence
+Favorite.reset_pk_sequence
 
 #shift off the first element to get rid of the column names
 def parse_csv_file
@@ -27,8 +33,14 @@ def parse_csv_file
 end
 
 painters = parse_csv_file
+# byebug
 painters.each do |painter_hash| 
     Painter.create!(painter_hash)
 end 
 
+katherine = User.create(username: "Elronia")
+patrick = User.create(username: "pierre2")
 
+painting1 = Painting.create(name: "The Jewess", image: "db/paintings_image/Amedeo Modigliani_paintings", painter_id: 1)
+
+favorite1 = Favorite.create(painting_id: 1, user_id: 2)
