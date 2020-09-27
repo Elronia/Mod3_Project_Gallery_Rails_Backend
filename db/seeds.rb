@@ -41,7 +41,9 @@ end
 katherine = User.create(username: "Elronia")
 patrick = User.create(username: "pierre2")
 
-painting1 = Painting.create(name: "The Jewess", year: "1908", image: "db/paintings_image/Amedeo Modigliani_paintings", painter_id: 1)
+#painting1 = Painting.create(name: "The Jewess", year: "1908", image: "db/paintings_image/Amedeo Modigliani_paintings", painter_id: 1)
+
+test_painting = Painting.create(name:"Westminister Bridge", year:"1871", image:"https://res.cloudinary.com/interactive-gallery/image/upload/v1601168557/paintings_image/Claude%20Monet_paintings/1871_Westminster_Bridge_aka_The_Thames_below_Westminster_monet_claude_2_z4ehjy.jpg",painter:Painter.first)
 
 favorite1 = Favorite.create(painting_id: 1, user_id: 2)
 puts "I have seeded the database"
