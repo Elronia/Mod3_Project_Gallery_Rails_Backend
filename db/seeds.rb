@@ -74,9 +74,43 @@ paintings.each do |painting_hash|
     Painting.create!(painting_hash)
 end
 
+def parse_painting_csv_file
+    csv_data = CSV.read("db/csv_paintings.csv")
+    csv_data.shift
+    # iterate over each element and send back a hash 
+    # need to shift again at the beginning to get rid of id on the row
+    painting_object_array = []
+    csv_data.each do |painting_row_arr|
+        painting_row_arr.shift
+        painting_object = {
+            :name => painting_row_arr[0],
+            :image=> painting_row_arr[1],
+            :year => painting_row_arr[2],
+            :painter_id => painting_row_arr[3],
+        }
+            painting_object_array.push(painting_object)  
+    end
+    painting_object_array.flatten
+end
+
+##########################################################
+#adding records to users table
 katherine = User.create(username: "Elronia")
 patrick = User.create(username: "pierre2")
 
+#adding records to painter table
+painters = parse_painter_csv_file
+painters.each do |painter_hash| 
+    Painter.create!(painter_hash)
+end 
 
-favorite1 = Favorite.create(painting_id: 1, user_id: 2)
+#adding records to painting table
+
+paintings = parse_painting_csv_file
+paintings.each do |painting_hash|
+    Painting.create!(painting_hash)
+end
+
+#adding record to Favorite Table
+#favorite1 = Favorite.create(painting_id: 1, user_id: 2)
 puts "I have seeded the database"
