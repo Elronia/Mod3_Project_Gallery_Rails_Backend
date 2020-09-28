@@ -13,7 +13,7 @@ Favorite.reset_pk_sequence
 ################################################################
 #method to parse painter csv file
 def parse_painter_csv_file
-    csv_data = CSV.read("db/artists_for_seed_data.csv")
+    csv_data = CSV.read("db/painter_seed_data.csv")
     csv_data.shift
     # iterate over each element and send back a hash 
     # need to shift again at the beginning to get rid of id on the row
@@ -26,7 +26,8 @@ def parse_painter_csv_file
             :genre => painter_row_arr[2],
             :nationality => painter_row_arr[3],
             :bio => painter_row_arr[4],
-            :painting_num => painter_row_arr[6]
+            :painting_num => painter_row_arr[6],
+            :portrait => painter_row_arr[7]
         }
             painter_object_array.push(painter_object)  
     end
