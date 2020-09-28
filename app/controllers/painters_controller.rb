@@ -1,6 +1,6 @@
 class PaintersController < ApplicationController
     def index
-        painters = Painter.all
+        painters = Painter.alphabetize_painters
         render json: painters
     end
 end
