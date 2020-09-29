@@ -75,5 +75,5 @@ paintings.each do |painting_hash|
 end
 
 #adding record to Favorite Table
-#favorite1 = Favorite.create(painting_id: 1, user_id: 2)
+favorite1 = Favorite.create(painting_id: 1, user_id: 2)
 puts "I have seeded the database"
