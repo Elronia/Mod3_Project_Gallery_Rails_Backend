@@ -76,4 +76,10 @@ end
 
 #adding record to Favorite Table
 favorite1 = Favorite.create(painting_id: 1, user_id: 2)
+favorite2 = Favorite.create(painting_id: 22, user_id: 2)
+favorite3 = Favorite.create(painting_id: 45, user_id: 2)
+favorite4 = Favorite.create(painting_id: 120, user_id: 2)
+favorite5 = Favorite.create(painting_id: 6, user_id: 2)
+favorite6 = Favorite.create(painting_id: 80, user_id: 2)
+
 puts "I have seeded the database"
