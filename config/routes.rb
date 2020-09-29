@@ -6,6 +6,7 @@ Rails.application.routes.draw do
 
   #routes for user
   post "/login", to: "users#handle_login"
+  get "/users/:id", to: "users#show"
 
   #routes for paintings controller
   get "/paintings", to: "paintings#index"
