@@ -8,6 +8,9 @@ class FavoritesController < ApplicationController
     end
 
     def create
+        new_favorite = Favorite.create(painting_id: params[:painting_id], user_id: params[:user_id])
+        byebug
+        render json: new_favorite
     end
 
     def update
