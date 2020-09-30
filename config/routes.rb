@@ -10,6 +10,7 @@ Rails.application.routes.draw do
 
   #routes for paintings controller
   get "/paintings", to: "paintings#index"
+  get "/paintings/:id", to: "paintings#show"
 
   #routes for painters controller 
   get "/painters", to: "painters#index"
