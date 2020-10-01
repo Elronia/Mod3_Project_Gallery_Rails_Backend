@@ -5,8 +5,10 @@ Rails.application.routes.draw do
   # resources :users
 
   #routes for user
+  get "/users", to: "users#index"
   post "/login", to: "users#handle_login"
   get "/users/:id", to: "users#show"
+  patch "users/:id", to: "users#update"
 
   #routes for paintings controller
   get "/paintings", to: "paintings#index"
