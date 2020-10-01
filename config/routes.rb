@@ -6,6 +6,7 @@ Rails.application.routes.draw do
 
   #routes for user
   get "/users", to: "users#index"
+  post "/users", to: "users#create"
   post "/login", to: "users#handle_login"
   get "/users/:id", to: "users#show"
   patch "users/:id", to: "users#update"
