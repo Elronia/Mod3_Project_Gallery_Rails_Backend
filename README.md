@@ -17,5 +17,5 @@ $ bundle install
 $ rails db:create
 $ rails db:migrate
 $ rails db:seed   
-*Start rails server  
+* Start rails server  
 $ rails s.
