@@ -10,7 +10,7 @@ $ brew install ruby
 $ gem install rails
 * Install [PostreSQL](https://www.postgresql.org/)  
 $ brew install postgresql
-* Clone repo and cd into Gallery_Rails_Backend/backend 
+* Clone repo and cd into Gallery_Rails_Backend
 * Install dependencies  
 $ bundle install
 * Create migration, migrate and seed  
