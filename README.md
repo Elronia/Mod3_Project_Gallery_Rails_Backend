@@ -2,7 +2,7 @@
 Art Gallery is a full-stack web application where you can browse around the gallery of famous artists' paintings. This app will help a person to get familiar with art/paintings.
 ## Getting Started
 ### Installing Backend
-* Install Homebrew 
+* Install [Homebrew](https://brew.sh/)
 $ /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 * Install Ruby  
 $ brew install ruby
@@ -28,5 +28,5 @@ $ rails s.
 * HTML/CSS
 * Active Record
 ## Tools
-* Rack CORS
-* ActiveModel::Serializer
+* [Rack CORS](https://github.com/cyu/rack-cors)
+* [ActiveModel::Serializer](https://github.com/rails-api/active_model_serializers)
