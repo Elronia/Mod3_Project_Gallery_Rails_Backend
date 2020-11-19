@@ -4,11 +4,11 @@ Art Gallery is a full-stack web application where you can browse around the gall
 ### Installing Backend
 * Install [Homebrew](https://brew.sh/)  
 $ /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
-* Install Ruby  
+* Install [Ruby](https://www.ruby-lang.org/en/)
 $ brew install ruby
-* Install Rails  
+* Install [Rails](https://rubyonrails.org/)  
 $ gem install rails
-* Install PostreSQL  
+* Install [PostreSQL](https://www.postgresql.org/)  
 $ brew install postgresql
 * Clone repo and cd into Gallery_Rails_Backend/backend 
 * Install dependencies  
