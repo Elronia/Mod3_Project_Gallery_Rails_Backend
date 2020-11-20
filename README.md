@@ -21,6 +21,8 @@ $ rails db:seed
 $ rails s
 ### ActiveRecord Associations
 * There are 4 models with `has_many`, `belongs_to` and `has_many through` associations
+### Domain Model
+<img src='app/db/ERD_image/Gallery_ERD.png'></img>
 ## Tech Stack
 * Vanilla JavaScript (Frontend: https://github.com/Elronia/Mod3_Project_Javascript_Frontend)
 * Ruby on Rails API (Backend)
