@@ -32,3 +32,6 @@ $ rails s
 ## Tools
 * [Rack CORS](https://github.com/cyu/rack-cors)
 * [ActiveModel::Serializer](https://github.com/rails-api/active_model_serializers)
+## Creators
+* [Ekaterina Zarudnaya](https://github.com/Elronia)
+* [Patrick Pierre](https://github.com/pierrewebdev)
