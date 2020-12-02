@@ -3,22 +3,22 @@ Art Gallery is a full-stack web application where you can browse around the gall
 ## Getting Started
 ### Installing Backend
 * Install [Homebrew](https://brew.sh/)  
-$ /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+```$ /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"```
 * Install [Ruby](https://www.ruby-lang.org/en/)  
-$ brew install ruby
+```$ brew install ruby```
 * Install [Rails](https://rubyonrails.org/)  
-$ gem install rails
+```$ gem install rails```
 * Install [PostreSQL](https://www.postgresql.org/)  
-$ brew install postgresql
+```$ brew install postgresql```
 * Clone repo and cd into Gallery_Rails_Backend
 * Install dependencies  
-$ bundle install
+```$ bundle install```
 * Create migration, migrate and seed  
-$ rails db:create  
-$ rails db:migrate  
-$ rails db:seed   
+```$ rails db:create``` 
+```$ rails db:migrate```  
+```$ rails db:seed```   
 * Start rails server  
-$ rails s
+```$ rails s```
 ### ActiveRecord Associations
 * There are 4 models with `has_many`, `belongs_to` and `has_many through` associations
 ### Domain Model
