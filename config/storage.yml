@@ -6,9 +6,9 @@ local:
   service: Disk
   root: <%= Rails.root.join("storage") %>
 
-  #snippet of code to allow for use of the cloudinary gem
-  cloudinary:
-  service: Cloudinary
+  # #snippet of code to allow for use of the cloudinary gem
+  # cloudinary:
+  # service: Cloudinary
 
 # Use rails credentials:edit to set the AWS secrets (as aws:access_key_id|secret_access_key)
 # amazon:
