@@ -1,6 +1,6 @@
 # Mod3_Project_Gallery_Rails_Backend
 
-[Video Demo](https://www.youtube.com/watch?v=ELnayVZ-xpo&feature=youtu.be&ab_channel=Elronia24)
+[Video Demo](https://www.youtube.com/watch?v=ELnayVZ-xpo&feature=youtu.be&ab_channel=Elronia24) | [Live Demo](https://elronia.github.io/interactive-art-gallery-ui/)
 
 Art Gallery is a full-stack web application where you can browse around the gallery of famous artists' paintings. This app will help a person to get familiar with art/paintings.  
 
