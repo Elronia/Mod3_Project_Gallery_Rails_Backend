@@ -5,7 +5,6 @@ class UsersController < ApplicationController
     end
 
     def create
-        byebug
         User.create(username:params[:username])
     end
 
